@@ -7,7 +7,20 @@
   "dependencies": {},
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
-    "nx": "15.9.2"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "nx": "15.9.2",
+    "prettier": "^2.8.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,md,ts,html,graphql}": [
+      "yarn format --uncommitted"
+    ]
   },
   "workspaces": [
     "packages/*"
