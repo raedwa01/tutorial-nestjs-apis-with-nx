@@ -2,6 +2,9 @@
   "name": "beehive",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "14.20.1"
+  },
   "scripts": {
     "start": "node dist/packages/api/main.js"
   },
