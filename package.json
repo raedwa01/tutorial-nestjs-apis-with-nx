@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/packages/api/main.js",
-    "build": "nx build api --prod"
+    "start": "node dist/packages/api/main.js"
   },
   "private": true,
   "dependencies": {
